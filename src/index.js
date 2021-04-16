@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import IsGlitchy from './glitcher';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+
+   <IsGlitchy />
+   
   </React.StrictMode>,
   document.getElementById('root')
 );
