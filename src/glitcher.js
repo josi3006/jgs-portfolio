@@ -1,6 +1,6 @@
 import React from 'react';
 import GlitchClip from 'react-glitch-effect/core/GlitchClip';
-import splash from 'process.env.PUBLIC_URL/google.png';
+import splash from './images/google.png';
 
 const IsGlitchy = () => {
 
