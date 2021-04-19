@@ -7,11 +7,11 @@ import IsGlitchy from './glitcher';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
 
-   <IsGlitchy />
+    <App />
    
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 

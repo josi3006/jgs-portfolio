@@ -1,21 +1,20 @@
 import React from 'react';
-import GlitchClip from 'react-glitch-effect/core/GlitchClip';
+// import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 import splash from './images/google.png';
+
+import "./index.css";
+
 
 const IsGlitchy = () => {
 
     return (
-      <GlitchClip onHover={true}>
-        <img src={splash} />
-      </GlitchClip>
+
+        <div id='glitchbox'>
+
+            <img src={splash} className='viewportwhole' />
+
+        </div>
     )
 }
 
 export default IsGlitchy;
- 
- /* props: 
- * duration: number,
- * iterationCount: string,
- * disabled: bool,
- * onHover: bool,
- * */
