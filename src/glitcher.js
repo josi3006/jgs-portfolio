@@ -9,9 +9,9 @@ const IsGlitchy = () => {
 
     return (
 
-        <div id='glitchbox'>
+        <div id='testbox'>
 
-            <img src={splash} className='viewportwhole' />
+            <img src={splash} />
 
         </div>
     )
