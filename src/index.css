@@ -4,6 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+  background-color: white;
 
 }
 
@@ -17,121 +18,6 @@ code {
   margin: 0;
   padding: 0;
 }
-
-/* The animation code */
-
-@keyframes googlitch {
-  1% {
-    -webkit-clip-path: polygon(0% 10%, 100% 10%, 100% 20%, 0% 20%);
-    clip-path: polygon(0% 10%, 100% 10%, 100% 20%, 0% 20%);
-  }
-  2% {
-    -webkit-clip-path: polygon(0% 30%, 100% 30%, 100% 40%, 0% 40%);
-    clip-path: polygon(0% 30%, 100% 30%, 100% 40%, 0% 40%);
-    transition: filter;
-    -webkit-filter: grayscale(100%);
-    /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  3% {
-    -webkit-clip-path: polygon(0% 20%, 100% 20%, 100% 30%, 0% 30%);
-    clip-path: polygon(0% 20%, 100% 20%, 100% 30%, 0% 30%);
-    transform: translate(20vw);
-  }
-  4% {
-    -webkit-clip-path: polygon(0% 60%, 100% 60%, 100% 70%, 0% 70%);
-    clip-path: polygon(0% 60%, 100% 60%, 100% 70%, 0% 70%);
-    transform: none;
-    -webkit-transform: none;
-  }
-  5% {
-    -webkit-clip-path: polygon(0% 40%, 100% 40%, 100% 50%, 0% 50%);
-    clip-path: polygon(0% 40%, 100% 40%, 100% 50%, 0% 50%);
-    transform: translate(-50vw);
-  }
-  6% {
-    -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 60%, 0% 60%);
-    clip-path: polygon(0% 50%, 100% 50%, 100% 60%, 0% 60%);
-    transform: none;
-  }
-  7% {
-    -webkit-clip-path: polygon(0% 70%, 100% 70%, 100% 80%, 0% 80%);
-    clip-path: polygon(0% 70%, 100% 70%, 100% 80%, 0% 80%);
-  }
-  8% {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    transition: filter;
-    -webkit-filter: grayscale(0%);
-    /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    -webkit-transform: none;
-    transform: none;
-  }
-  9% {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    transition: filter;
-    -webkit-filter: grayscale(0%);
-    /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  }
-  10% {
-    -webkit-clip-path: polygon(0% 40%, 100% 40%, 100% 50%, 0% 50%);
-    clip-path: polygon(0% 40%, 100% 40%, 100% 50%, 0% 50%);
-    transition: filter;
-    -webkit-filter: grayscale(100%);
-    /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    transform: translate(-50vw);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  13% {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    transition: filter;
-    -webkit-filter: grayscale(0%);
-    /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  14% {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  90% {
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-  }
-  /* 
-  91% {
-
-  }
-
-  92% {
-
-  }
-
-  93% {
-
-  }
-
-  94% {
-
-  } */
-  91% {
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-  }
-  100% {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    transition: filter;
-    -webkit-filter: grayscale(0%);
-    /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  }
-}
-
-@-webkit-keyframes googlitch {}
 
 /* The element to apply the animation to */
 
@@ -157,16 +43,13 @@ code {
 
 @keyframes testanimation {
   0% {
-    background-color: red;
     transform: none;
   }
   2% {
-    background-color: green;
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
   }
   4%, 100% {
-    background-color: red;
     -webkit-transform: none;
     transform: none;
   }
@@ -286,12 +169,20 @@ code {
 }
 
 #testbox {
-  width: 90vw;
-  color: black;
+  width: 40vw;
+  height: auto;
+  color: white;
   overflow: hidden;
   animation-name: testanimation;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-delay: -1s;
   animation-iteration-count: infinite;
+  position: absolute;
+  
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
 }
+

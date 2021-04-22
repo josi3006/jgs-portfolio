@@ -1,6 +1,6 @@
 import React from 'react';
 // import GlitchClip from 'react-glitch-effect/core/GlitchClip';
-import splash from './images/google.png';
+import splash from './images/googleblock.png';
 
 import "./index.css";
 
@@ -9,11 +9,12 @@ const IsGlitchy = () => {
 
     return (
 
-        <div id='testbox'>
+            <div id='testbox'>
 
-            <img src={splash} />
+                <img src={splash} className='viewportwhole' />
 
-        </div>
+            </div>
+
     )
 }
 
