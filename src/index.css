@@ -21,9 +21,7 @@ code {
 
 
 
-
-
-@-webkit-keyframes testanimation {
+@-webkit-keyframes glitchimation {
   0% {
     transform: none;
   }
@@ -277,7 +275,7 @@ code {
   }
 }
 
-#glitchbox {
+.glitchbox {
   width: 40vw;
   height: auto;
   color: white;
@@ -288,5 +286,13 @@ code {
   animation-delay: -1s;
   animation-iteration-count: infinite;
   position: absolute;
+  }
+
+  .staticbox {
+    width: 40vw;
+    height: auto;
+    color: white;
+    overflow: hidden;
+    position: absolute;
   }
 

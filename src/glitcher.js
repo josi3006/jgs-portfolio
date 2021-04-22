@@ -1,5 +1,4 @@
-import React from 'react';
-// import GlitchClip from 'react-glitch-effect/core/GlitchClip';
+import React, { useState } from 'react';
 import splash from './images/googleblock.png';
 
 import "./index.css";
@@ -7,14 +6,26 @@ import "./index.css";
 
 const IsGlitchy = () => {
 
+    const [Glitching, setGlitching] = useState(false)
+
+    window.addEventListener('mousemove', () => {
+        setGlitching(true);
+    })
+
     return (
 
-            <div id='glitchbox'>
+        <div>
+            {
+                Glitching ? (
+                    <div className="glitchbox">
+                        <img src={splash} alt="splash" />
+                    </div>) : (
+                    <div className="staticbox">
+                        <img src={splash} alt="splash" />
+                    </div>)
+            }
 
-                <img src={splash} className='viewportwhole' />
-
-            </div>
-
+        </div>
     )
 }
 
