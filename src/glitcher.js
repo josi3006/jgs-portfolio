@@ -14,14 +14,14 @@ const IsGlitchy = () => {
 
     return (
 
-        <div>
+        <div className="covers">
             {
                 Glitching ? (
                     <div className="glitchbox">
-                        <img src={splash} alt="splash" />
+                        <img src={splash} alt="splash" className='fullsize' />
                     </div>) : (
                     <div className="staticbox">
-                        <img src={splash} alt="splash" />
+                        <img src={splash} alt="splash" className='fullsize' />
                     </div>)
             }
 
