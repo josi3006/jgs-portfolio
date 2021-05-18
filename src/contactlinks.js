@@ -31,7 +31,7 @@ const ContactLinks = () => {
         setLink5(<div className="glitchlink mt-2">Github</div>);
     }, 3200);
     setTimeout(() => {
-        setLink6(<div className="glitchlink mt-2">Resume</div>);
+        setLink6(<div className="glitchlink mt-2 mb-5">Resume</div>);
     }, 3400);
 
     function replay() {

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./index.css";
 import WorkLinks from "./worklinks.js";
 import ContactLinks from "./contactlinks.js";
+import MainWindow from "./mainwindow.js";
 
 
 
@@ -21,7 +22,7 @@ const Main = () => {
                 </div>
 
                 <div className="col-8 black">
-                    I'm a col!
+                    <MainWindow />
                 </div>
 
                 <div className="col-2 black">
