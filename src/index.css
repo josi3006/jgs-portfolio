@@ -21,8 +21,7 @@ code {
 }
 
 .fullwidth {
-  background-color: red;
-
+  background-color: black;
 }
 
 .covers {
@@ -38,9 +37,6 @@ code {
   font-family: 'Courier New', Courier, monospace;
   min-height: 100vh;
   display: flex;
-  /* flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   background-color: black;
   color: #32cd32;
 }
@@ -55,4 +51,3 @@ code {
   background-color: transparent;
   color: #E0E0E0;
 }
-

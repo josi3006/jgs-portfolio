@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./index.css";
-import Links from "./links.js";
+import WorkLinks from "./worklinks.js";
+import ContactLinks from "./contactlinks.js";
 
 
 
@@ -16,15 +17,15 @@ const Main = () => {
             <div className="row fullwidth">
 
                 <div className="col-2 black">
-                    <Links />
+                    <WorkLinks />
                 </div>
 
-                <div className="col-8">
+                <div className="col-8 black">
                     I'm a col!
                 </div>
 
                 <div className="col-2 black">
-                    I'm a col!
+                    <ContactLinks />
                 </div>
 
             </div>
