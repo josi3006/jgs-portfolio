@@ -51,3 +51,9 @@ code {
   background-color: transparent;
   color: #E0E0E0;
 }
+
+.contacts {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
