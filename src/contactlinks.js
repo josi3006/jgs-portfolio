@@ -23,20 +23,16 @@ const ContactLinks = () => {
     }, 2400);
     setTimeout(() => {
         setLink3(<div className="glitchlink mt-2">Contact Form</div>);
-    }, 2600);
+    }, 2500);
     setTimeout(() => {
         setLink4(<div className="glitchlink mt-2">LinkedIn</div>);
-    }, 3000);
+    }, 2600);
     setTimeout(() => {
         setLink5(<div className="glitchlink mt-2">Github</div>);
-    }, 3200);
+    }, 3000);
     setTimeout(() => {
         setLink6(<div className="glitchlink mt-2 mb-5">Resume</div>);
-    }, 3400);
-
-    function replay() {
-        window.location.reload();
-    }
+    }, 3200);
 
     return (
 

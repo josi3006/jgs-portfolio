@@ -12,6 +12,8 @@ const WorkLinks = () => {
     const [link4, setLink4] = useState('');
     const [link5, setLink5] = useState('');
     const [link6, setLink6] = useState('');
+    const [link7, setLink7] = useState('');
+
 
 
 
@@ -31,8 +33,11 @@ const WorkLinks = () => {
         setLink5(<div className="glitchlink mt-2">FireChat</div>);
     }, 2000);
     setTimeout(() => {
-        setLink6(<div className="fadelink" onClick={replay}>Replay</div>);
-    }, 2000);
+        setLink6(<div className="glitchlink mt-2">PayeePages</div>);
+    }, 2200);
+    setTimeout(() => {
+        setLink7(<div className="fadelink" onClick={replay}>Replay</div>);
+    }, 3000);
 
     function replay() {
         window.location.reload();
@@ -47,8 +52,9 @@ const WorkLinks = () => {
             {link3}
             {link4}
             {link5}
-
             {link6}
+
+            {link7}
 
         </div>
 

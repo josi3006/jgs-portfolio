@@ -25,7 +25,7 @@ const Main = () => {
                     <MainWindow />
                 </div>
 
-                <div className="col-2 black">
+                <div className="col-2 black contacts">
                     <ContactLinks />
                 </div>
 

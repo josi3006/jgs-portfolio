@@ -11,7 +11,7 @@ const MainWindow = () => {
 
     return (
 
-        <div className="container-fluid mainattraction">
+        <div className="d-flex align-items-center justify-content-center container-fluid mainattraction">
 
           <h1>Hello React!</h1>
 

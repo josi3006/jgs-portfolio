@@ -58,12 +58,18 @@ code {
   right: 10px;
 }
 
+
+.container-fluid {
+  background-color: black;
+}
+
+
 .mainattraction {
-  background-color: red;
+  background-color: rgb(59, 6, 66);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50vw;
-  height: auto;
+  height: 50vh;
 }
