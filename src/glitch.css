@@ -267,9 +267,9 @@
   color: white;
   overflow: hidden;
   animation-name: glitchimation;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: linear;
-  animation-delay: -1s;
+  animation-delay: 0s;
   animation-iteration-count: infinite;
   position: absolute;
 }

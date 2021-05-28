@@ -8,36 +8,21 @@ import Loading from './loading';
 function App() {
 
   return (
-<>
+    <>
 
-    <Router>
-      <div>
-        {/* <NavTabs /> */}
-        <Route exact path="/" component={IsGlitchy} />
-        <Route exact path="/mainpage" component={Main} />
-        {/* <Route path="/contact" component={Contact} /> */}
-      </div>
-      {/* <Footer /> */}
+      <Router>
+        <div>
+          {/* <NavTabs /> */}
+          <Route exact path="/" component={IsGlitchy} />
+          <Route exact path="/mainpage" component={Main} />
+          {/* <Route path="/contact" component={Contact} /> */}
+        </div>
+        {/* <Footer /> */}
 
-    </Router>
-
-{/* 
-
-    <div className="App">
-
-      <header className="App-header">
+      </Router>
 
 
-        <IsGlitchy />
-
-
-      </header>
-
-
-    </div> */}
-
-
-</>
+    </>
   );
 }
 
